@@ -44,7 +44,7 @@ names(data.sub) <- name.new
 
 
 data.tidy <- aggregate(data.sub[,3:81], by = list(activity = data.sub$activity, subject = data.sub$subject),FUN = mean)
-write.table(x = data.tidy, file = "data_tidy2.txt", row.names = FALSE)
+write.table(x = data.tidy, file = "data_tidy.txt", row.names = FALSE)
 
 
 
